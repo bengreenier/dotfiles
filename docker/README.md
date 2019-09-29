@@ -28,6 +28,7 @@ Expects the following volume mounts at runtime:
 ```
 /home/bengreenier/.ssh: Ssh key directory from host
 /home/bengreenier/git: Source directory from host
+/mnt/session_store: A location at which session data can be persisted (bash_history, etc)
 
 # and, for docker inside docker
 //var/run/docker.sock:/var/run/docker.sock

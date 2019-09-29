@@ -12,7 +12,7 @@
         {
             "guid": "{8175F7A0-B6E0-4097-BE1A-E2BEC7317393}",
             "name": "DevContainer/Git",
-            "commandline": "docker run -it --rm -v ~/git:/home/bengreenier/git -v ~/.ssh:/home/bengreenier/.ssh -v //var/run/docker.sock:/var/run/docker.sock bengreenier/dotfile-devcontainer:latest",
+            "commandline": "docker run -it --rm -v ~/git:/home/bengreenier/git -v ~/.ssh:/home/bengreenier/.ssh -v ~/.session:/mnt/session_store -v //var/run/docker.sock:/var/run/docker.sock bengreenier/dotfile-devcontainer:latest",
             "startingDirectory": "~/",
             "closeOnExit": true,
             "colorScheme": "Dark+"

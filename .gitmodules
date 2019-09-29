@@ -1,0 +1,3 @@
+[submodule "docker/dot-tmux"]
+	path = docker/dot-tmux
+	url = https://github.com/gpakosz/.tmux
