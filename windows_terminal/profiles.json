@@ -1,0 +1,59 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{8175F7A0-B6E0-4097-BE1A-E2BEC7317393}",
+
+    "profiles":
+    [
+        {
+            "guid": "{8175F7A0-B6E0-4097-BE1A-E2BEC7317393}",
+            "name": "DevContainer/Git",
+            "commandline": "docker run -it --rm -v ~/git:/home/bengreenier/git -v ~/.ssh:/home/bengreenier/.ssh -v //var/run/docker.sock:/var/run/docker.sock bengreenier/dotfile-devcontainer:latest",
+            "startingDirectory": "~/",
+            "closeOnExit": true,
+            "colorScheme": "Dark+"
+        }
+    ],
+
+    // Add custom color schemes to this array
+    "schemes": [
+        {
+            "name": "Dark+",
+            "black": "#000000",
+            "red": "#cd3131",
+            "green": "#0dbc79",
+            "yellow": "#e5e510",
+            "blue": "#2472c8",
+            "purple": "#bc3fbc",
+            "cyan": "#11a8cd",
+            "white": "#e5e5e5",
+            "brightBlack": "#666666",
+            "brightRed": "#f14c4c",
+            "brightGreen": "#23d18b",
+            "brightYellow": "#f5f543",
+            "brightBlue": "#3b8eea",
+            "brightPurple": "#d670d6",
+            "brightCyan": "#29b8db",
+            "brightWhite": "#e5e5e5",
+            "background": "#0e0e0e",
+            "foreground": "#cccccc"
+          }
+    ],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": [
+        {
+            "command": "copy",
+            "keys": ["ctrl+shift+c"]
+        },
+        {
+            "command": "paste",
+            "keys": ["ctrl+shift+v"]
+        }
+    ]
+}
