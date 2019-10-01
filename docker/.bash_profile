@@ -16,6 +16,7 @@ export TERM=xterm-256color
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export HISTFILE=/mnt/session_store/.bash_history
+export PROMPT_COMMAND='history -a'
 alias ls='ls -GFh --color=auto'
 alias weather='curl -4 http://wttr.in/London'
 alias killall='killall5'

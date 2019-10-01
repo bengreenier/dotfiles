@@ -9,7 +9,8 @@ Install these:
 + [VS Code](https://code.visualstudio.com)
 + [Git](https://git-scm.com/download)
 + [Docker](https://hub.docker.com/?overlay=onboarding)
-+ Windows Terminal
++ [FIRA Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode
++ [Cmder](https://cmder.net/)
 
 
 Then:

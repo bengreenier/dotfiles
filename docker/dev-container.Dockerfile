@@ -10,6 +10,9 @@ RUN apt-get update && apt-get install -y \
 # Install thefuck
 RUN pip3 install thefuck
 
+# Install gg
+RUN curl -fsSL git.io/gg.sh | bash
+
 # Install docker cli
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 RUN add-apt-repository \
@@ -31,10 +34,11 @@ RUN dos2unix /home/bengreenier/.bash_profile
 
 # Install tmux config
 COPY ./dot-tmux/.tmux.conf /home/bengreenier
-COPY ./dot-tmux/.tmux.conf.local /home/bengreenier
+COPY ./.tmux.conf.local /home/bengreenier
 RUN dos2unix /home/bengreenier/.tmux.conf /home/bengreenier/.tmux.conf.local
 
 # Become the user
 USER bengreenier
 WORKDIR /home/bengreenier
+RUN touch ~/.sudo_as_admin_successful
 ENTRYPOINT [ "/bin/bash", "--login", "-c", "tmux" ]
